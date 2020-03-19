@@ -12,7 +12,7 @@ ENV SPIDER_URL http://localhost:1024
 
 RUN apt-get update && yes | apt-get install git && apt-get install git-core && apt-get install wget
 
-RUN git clone https://github.com/cloud-barista/cb-dragonfly.git && cd cb-dragonfly/ &&\
+RUN git clone https://github.com/cloud-barista/cb-dragonfly.git &&\
  wget https://dl.google.com/go/go1.13.4.linux-amd64.tar.gz &&\
  tar -C /usr/local -xzf go1.13.4.linux-amd64.tar.gz &&\
  rm go1.13.4.linux-amd64.tar.gz
