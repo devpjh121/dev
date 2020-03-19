@@ -7,7 +7,7 @@ WORKDIR /home/projects
 ENV PATH $PATH:/usr/local/go/bin
 ENV CBSTORE_ROOT /home/projects/cb-dragonfly
 ENV CBLOG_ROOT /home/projects/cb-dragonfly
-ENV CBMON_ROOT /home/projects/cb-dragonfly
+ENV CBMON_PATH /home/projects/cb-dragonfly
 ENV SPIDER_URL http://localhost:1024
 
 RUN apt-get update && yes | apt-get install git && apt-get install git-core && apt-get install wget
